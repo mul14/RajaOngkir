@@ -12,6 +12,7 @@ Add this to your PHP code
 
 ```php
 <?php
+
 require 'vendor/autoload.php';
 
 use Nasution\Shipping\RajaOngkir\Endpoints as RajaOngkir;
@@ -37,9 +38,12 @@ $rajaongkir->city($provinceId = 5);
 $rajaongkir->city($provinceId = 5, $cityId = 501);
 
 // Get the cost
-$courierId = 'jne'; // jne, tiki, pos
-$rajaongkir->cost($fromCityId = 501, $toCityId = 278, $weightInGram = 1000, $courierId);
-
+$rajaongkir->cost(
+    $fromCityId = 501, 
+    $toCityId = 278, 
+    $weightInGram = 1000, 
+    $courierId = 'jne'; // jne, tiki, pos
+);
 ```
 
 ## References
