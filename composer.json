@@ -1,0 +1,20 @@
+{
+    "name": "nasution/rajaongkir",
+    "description": "RajaOngkir.com Shipping PHP library.",
+    "homepage": "http://RajaOngkir.com",
+    "license": "Unlicense",
+    "keywords": ["RajaOngkir", "Shipping", "Indonesia"],
+    "authors": [
+        { "name": "Damar Riyadi", "email": "damar@tahutek.net" },
+        { "name": "Mulia Arifandi Nasution", "email": "mul14.net@gmail.com" }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nasution\\Shipping\\RajaOngkir\\": "src/"
+        }
+    }
+}
